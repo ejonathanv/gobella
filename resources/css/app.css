@@ -14,6 +14,9 @@ body{
 .primary-btn{
     @apply bg-green-800 text-white font-bold uppercase px-6 py-3 rounded inline-block items-center space-x-2 border-b-2 border-green-900;
 }
+.primary-btn.lg{
+    @apply text-xl px-8 py-4;
+}
 .rounded-image{
     @apply w-full h-auto rounded shadow-lg;
 }
@@ -32,9 +35,20 @@ body{
 .marquee h2 {
     white-space: nowrap;
 }
+
+@media screen and (max-width: 1080px) {
+    .container{
+        @apply px-6;
+    }
+
+    .primary-btn.lg{
+        @apply text-lg px-6 py-3;
+    }
+}
+
 /* COOKIES BANNER */
 .cookies-banner{
-    @apply hidden bottom-4 left-4 w-96 bg-green-200 p-5 rounded shadow-lg text-sm font-bold text-green-800;
+    @apply fixed bottom-4 left-4 w-96 bg-green-200 p-5 rounded shadow-lg text-sm font-bold text-green-800;
     z-index: 10;
 }
 /* TITLES & PARAGRAPHS */
@@ -55,12 +69,19 @@ h4{
 }
 /* LANDING PAGE HEADER */
 .landing-page-header{
-    @apply bg-white py-6 fixed top-0 left-0 w-full shadow;
+    @apply bg-white py-6 fixed top-0 left-0 w-full shadow-md;
     z-index: 10;
 }
 .landing-page-nav{
     @apply flex items-center space-x-5;
 }
+
+@media screen and (max-width: 1081px) {
+    h1{
+        @apply text-8xl;
+    }
+}
+
 /* LANDING PAGE SOCIAL MEDIA */
 .landing-page-social-media{
     transform: rotate(90deg);
@@ -78,6 +99,12 @@ h4{
 }
 .landing-page-social-media i{
     @apply text-xl text-green-800;
+}
+
+@media screen and (max-width: 1081px) {
+    .landing-page-social-media{
+        display: none;
+    }
 }
 /* LANDING PAGE COVER */
 .landing-page-cover{
@@ -129,6 +156,22 @@ h4{
     font-size: 3rem;
     position: absolute;
 }
+
+@media screen and (max-width: 1081px) {
+    .landing-page-cover .slide{
+        @apply space-x-6;
+    }
+    .landing-page-cover .slide h1{
+        @apply text-5xl mb-5;
+    }
+    .landing-page-cover .slide h2{
+        @apply text-xl mb-5;
+    }
+    .landing-page-cover .slide p{
+        @apply text-base mb-5;
+    }
+}
+
 /* ABOUT */
 .landing-page-about{
     @apply pb-16;
