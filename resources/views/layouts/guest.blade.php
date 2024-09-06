@@ -13,6 +13,7 @@
         <link href="{{ asset('css/owl.carousel.min.css') }}" rel="stylesheet">
         <link href="{{ asset('css/owl.theme.default.min.css') }}" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"  />
+        <link rel="stylesheet" href="https://use.typekit.net/dyn5hye.css">
 
         <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-3.7.1.js"></script>

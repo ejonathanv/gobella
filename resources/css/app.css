@@ -3,7 +3,10 @@
 @tailwind utilities;
 /* GENERAL */
 body{
-    padding-top: 75px;
+    font-family: "mundial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    @apply bg-light text-dark;
 }
 .container{
     @apply mx-auto max-w-6xl;
@@ -12,10 +15,19 @@ body{
     @apply mx-auto max-w-full px-6;
 }
 .primary-btn{
-    @apply bg-green-800 text-white font-bold uppercase px-6 py-3 rounded inline-block items-center space-x-2 border-b-2 border-green-900;
+    @apply bg-primary text-light font-bold uppercase px-6 py-3 rounded inline-block items-center space-x-2 border-b-2 border-primary;
 }
 .primary-btn.lg{
     @apply text-xl px-8 py-4;
+}
+.secondary-btn{
+    @apply bg-secondary text-light font-bold uppercase px-6 py-3 rounded inline-block items-center space-x-2 border-b-2 border-secondary;
+}
+.highlight-btn{
+    @apply bg-highlight text-dark font-bold uppercase px-6 py-3 rounded inline-block items-center space-x-2 border-b-2 border-secondary;
+}
+.highlight-btn:hover{
+    @apply bg-highlight-100;
 }
 .rounded-image{
     @apply w-full h-auto rounded shadow-lg;
@@ -25,7 +37,7 @@ body{
 }
 .square-image:before{
     content: '';
-    @apply absolute top-0 left-0 w-full h-full bg-green-800 rounded;
+    @apply absolute top-0 left-0 w-full h-full bg-primary rounded;
     opacity: 0.10;
 }
 .marquee {
@@ -48,8 +60,8 @@ body{
 
 /* COOKIES BANNER */
 .cookies-banner{
-    @apply fixed bottom-4 left-4 w-96 bg-green-200 p-5 rounded shadow-lg text-sm font-bold text-green-800;
-    z-index: 10;
+    @apply fixed bottom-4 left-4 w-96 bg-highlight p-5 rounded shadow-lg text-sm font-bold text-primary;
+    z-index: 999;
 }
 /* TITLES & PARAGRAPHS */
 h1{
@@ -64,16 +76,39 @@ h3{
 h4{
     @apply text-xl font-bold mb-5;
 }
+h1, h2, h3, h4, h5, h6{
+    font-family: "roca", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 .slogan{
-    @apply text-6xl font-bold mb-5;
+    @apply text-4xl font-bold mb-5;
 }
 /* LANDING PAGE HEADER */
 .landing-page-header{
-    @apply bg-white py-6 fixed top-0 left-0 w-full shadow-md;
-    z-index: 10;
+    @apply bg-white py-4 fixed top-0 left-0 w-full shadow-md;
+    z-index: 9999;
+}
+.landing-page-header a.logo img{
+    @apply h-16;
 }
 .landing-page-nav{
     @apply flex items-center space-x-5;
+}
+.landing-page-nav a{
+    @apply text-secondary font-bold text-sm uppercase relative;
+}
+.landing-page-nav a:hover{
+    @apply opacity-75;
+}   
+.landing-page-nav a.active{
+    @apply text-primary
+}
+.landing-page-nav a.active:before{
+    content: '';
+    @apply block w-full bg-highlight absolute left-0;
+    height: 2px;
+    bottom: -10px;
 }
 
 @media screen and (max-width: 1081px) {
@@ -92,13 +127,13 @@ h4{
     @apply flex items-center space-x-5 uppercase font-bold text-sm;
 }
 .landing-page-social-media span{
-    @apply block tracking-widest;
+    @apply block tracking-widest text-highlight;
 }
 .landing-page-social-media a{
     transform: rotate(-90deg);
 }
 .landing-page-social-media i{
-    @apply text-xl text-green-800;
+    @apply text-xl text-highlight;
 }
 
 @media screen and (max-width: 1081px) {
@@ -108,7 +143,8 @@ h4{
 }
 /* LANDING PAGE COVER */
 .landing-page-cover{
-    @apply bg-green-200 pt-10 relative shadow overflow-hidden;
+    padding-top: 92px;
+    @apply bg-primary relative shadow overflow-hidden;
     z-index: 2;
 }
 .landing-page-cover .curves{
@@ -116,40 +152,62 @@ h4{
     z-index: 1;
     transform: scale(1.5);
     opacity: 0.45;
+    display: none;
 }
+.landing-page-cover .slide-container{
+    min-height: 600px;
+    @apply flex items-center justify-center bg-cover bg-center relative;
+}
+.landing-page-cover .slide-container.video video{
+    @apply absolute top-0 left-0 w-full h-full object-cover;
+    z-index: 1;
+}
+.landing-page-cover .slide-container.video:before{
+    @apply absolute top-0 left-0 w-full h-full bg-secondary opacity-25;
+    content: '';
+    z-index: 2;
+}
+.landing-page-cover .slide-container.video .gradient{
+    @apply absolute top-0 left-0 w-full h-full bg-cover bg-center;
+    z-index: 2;
+}
+
 .landing-page-cover .slide{
-    @apply flex items-center space-x-24 relative;
+    @apply h-full flex items-center justify-center space-x-24 relative;
     z-index: 2;
 }
 .landing-page-cover .slide h1{
-    @apply text-6xl font-bold mb-7;
+    @apply text-6xl font-bold mb-7 text-light;
 }
 .landing-page-cover .slide h2{
-    @apply text-2xl font-bold mb-7;
+    @apply text-2xl font-bold mb-7 text-light;
 }
 .landing-page-cover .slide p{
-    @apply text-lg mb-7;
+    @apply text-lg mb-7 text-light;
 }
 .landing-page-cover .thumbs{
-    @apply flex justify-center items-center space-x-5 bg-green-300 mt-10 relative;
+    @apply flex justify-center items-center space-x-5 bg-secondary relative;
     z-index: 2;
 }
 .landing-page-cover .thumbs ul{
     @apply flex items-center justify-between space-x-1
 }
 .landing-page-cover .thumbs ul li{
-    @apply bg-gray-400 flex-1 p-7 text-white cursor-pointer opacity-50 transition relative;
+    @apply bg-highlight flex-1 p-7 text-primary cursor-pointer opacity-50 transition relative;
 }
 .landing-page-cover .thumbs ul li i{
     display: none;
     position:  absolute;
     top: -28px;
     left: calc(50% - 1.5rem);
-    @apply text-green-500;
+    @apply text-highlight;
 }
 .landing-page-cover .thumbs ul li:hover,
 .landing-page-cover .thumbs ul li.active{
-    @apply bg-green-500 opacity-100;
+    @apply bg-highlight opacity-75;
+}
+.landing-page-cover .thumbs ul li.active{
+    @apply text-dark opacity-100;
 }
 .landing-page-cover .thumbs ul li.active i{
     display: block;
@@ -178,13 +236,66 @@ h4{
 }
 /* SLOGAN */
 .landing-page-slogan{
-    @apply bg-green-700 py-32 bg-cover bg-center relative flex items-center justify-center;
-    min-height: 500px;
+    @apply bg-primary py-32 bg-cover bg-center relative flex items-center justify-center;
+    min-height: 600px;
+}
+.landing-page-slogan video{
+    @apply absolute top-0 left-0 w-full h-full object-cover;
+    z-index: 1;
 }
 .landing-page-slogan:before{
-    @apply absolute top-0 left-0 w-full h-full bg-green-300 opacity-75;
+    @apply absolute top-0 left-0 w-full h-full bg-highlight-900 opacity-50;
+    z-index: 2;
     content: '';
 }
 .landing-page-slogan .container{
     @apply relative z-10;
+}
+/* TABLES */
+table.landing-page-table{
+    @apply text-left text-sm w-full border-collapse;
+}
+table.landing-page-table th{
+    @apply font-bold bg-secondary text-white uppercase px-2 py-3 whitespace-nowrap border-b border-secondary;
+}
+table.landing-page-table td{
+    @apply px-2 py-1 border-b border-secondary;
+}
+/* TESTIMONIALS */
+.landing-page-testimonials{
+    @apply bg-highlight-900 py-24;
+}
+
+.testimonial{
+    @apply flex-1 bg-light p-10 rounded shadow-lg text-primary flex flex-col space-y-5 justify-center items-center;
+}
+
+/* SUSCRIPTION FORM */
+.landing-page-suscription-form{
+    @apply bg-light flex items-stretch;
+}
+
+.landing-page-suscription-form .suscription-form{
+    @apply flex flex-col flex-1 pl-16 pr-32 py-16 text-center items-center
+}
+
+.landing-page-suscription-form .suscription-form input{
+    @apply w-full bg-light border-b border-secondary p-3 rounded active:outline-none focus:outline-none focus:border-primary ring-0;
+}
+
+.landing-page-suscription-form .suscription-form button{
+    @apply primary-btn lg w-full;
+}
+
+/* FOOTER */
+.landing-page-footer{
+    @apply bg-primary py-16 text-light;
+}
+
+.landing-page-footer .logo{
+    @apply mb-10;
+}
+
+.landing-page-footer .logo img{
+    @apply h-16;
 }

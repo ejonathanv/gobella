@@ -12,8 +12,17 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                sans: ['mundial', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                'light': '#FEF6ED',
+                'dark': '#3C3C3C',
+                'primary': '#EB6554',
+                'secondary': '#F5B067',
+                'highlight': '#F8D779',
+                'highlight-100': '#fbdf90',
+                'highlight-900': '#6D5824'
+            }
         },
     },
 

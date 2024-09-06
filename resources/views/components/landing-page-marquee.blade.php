@@ -18,8 +18,8 @@
     }" x-init="marquee('.marquee', .2)">
     <div>
         <div class="marquee">
-            <h2 class="text-7xl text-green-600 opacity-10 font-bold px-4 py-4">
-                Go Bell is the best product in the market. Get it now for $99
+            <h2 class="text-7xl text-primary opacity-10 font-bold px-4 py-4">
+                Stay Energized All Day with Go Bella Wellness
             </h2>
         </div>
     </div>

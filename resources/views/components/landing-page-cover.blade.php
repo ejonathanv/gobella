@@ -2,88 +2,74 @@
     <div style="background-image: url({{ asset('landing-page/template-imgs/cover-curves.svg') }})" class="curves"></div>
     <!-- Slides -->
     <div class="owl-carousel owl-theme">
-        <div>
+        <!-- Slide 1 -->
+        <div class="slide-container" style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness.jpg') }})">
             <div class="container">
                 <div class="slide">
                     <div class="w-1/2">
-                        <h2>
-                            Welcome to GO Bella - Slide 1
-                        </h2>
                         <h1>
-                            This is a sample landing page for a product
+                            Power Your Lifestyle with Go Bella Wellness
                         </h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptates.
+                            Say goodbye to sugar crashes and hello to pure, sustained energy with Go Bella Wellness. Our supplement is crafted with natural ingredients, including essential vitamins, selenium, and L-theanine, to power your day. 
                         </p>
-                        <a href="#" class="primary-btn lg">
-                            <i class="fas fa-shopping-cart text-yellow-300"></i>
+                        <a href="#" class="highlight-btn lg">
+                            <i class="fas fa-shopping-cart text-primary"></i>
                             <span>Buy Now for $99</span>
                         </a>
                     </div>
                     <div class="w-1/2">
-                        <div class="square-image" style="
-                                    background-image: url({{ asset('landing-page/template-imgs/pexels-anntarazevich-6268736.jpg') }});
-                                    height: 500px;
-                                ">
-                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
 
-        <div>
+        <!-- Slide 2 -->
+        <div class="slide-container" style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness-2.jpg') }})">
             <div class="container">
                 <div class="slide">
                     <div class="w-1/2">
-                        <h2>
-                            Welcome to GO Bella - Slide 2
-                        </h2>
                         <h1>
-                            This is a sample landing page for a product
+                            Orange Flavor, Natural Boost <br> Energize Your Life!
                         </h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptates.
+                            Discover the delicious way to boost your energy with Go Bella Wellness. Infused with a delightful orange flavor, our supplement is free from sugar and artificial additives.
                         </p>
-                        <a href="#" class="primary-btn lg">
-                            <i class="fas fa-shopping-cart text-yellow-300"></i>
+                        <a href="#" class="highlight-btn lg">
+                            <i class="fas fa-shopping-cart text-primary"></i>
                             <span>Buy Now for $99</span>
                         </a>
                     </div>
                     <div class="w-1/2">
-                        <div class="square-image" style="
-                                    background-image: url({{ asset('landing-page/template-imgs/pexels-anntarazevich-6268736.jpg') }});
-                                    height: 500px;
-                                ">
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div>
+        <!-- Slide 3 -->
+        <div class="slide-container video">
+            <video autoplay loop muted playsinline>
+                <source src="{{ asset('landing-page/template-imgs/video/7241750-uhd_3840_2160_24fps.mp4') }}" type="video/mp4">
+            </video>
+            <div class="gradient" style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness-gradient-bg.png') }})">
+
+            </div>
             <div class="container">
                 <div class="slide">
                     <div class="w-1/2">
-                        <h2>
-                            Welcome to GO Bella - Slide 3
-                        </h2>
                         <h1>
-                            This is a sample landing page for a product
+                            Vitamin-Pack <br> For a Life Full of Energy
                         </h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptates.
+                            Go Bella Wellness brings you a potent blend of vitamins, selenium, and L-theanine in a tasty, orange-flavored supplement. Specially formulated to support your active lifestyle, it offers a healthy, sugar-free way to stay energized and focused. 
                         </p>
-                        <a href="#" class="primary-btn lg">
-                            <i class="fas fa-shopping-cart text-yellow-300"></i>
+                        <a href="#" class="highlight-btn lg">
+                            <i class="fas fa-shopping-cart text-primary"></i>
                             <span>Buy Now for $99</span>
                         </a>
                     </div>
                     <div class="w-1/2">
-                        <div class="square-image" style="
-                                    background-image: url({{ asset('landing-page/template-imgs/pexels-anntarazevich-6268736.jpg') }});
-                                    height: 500px;
-                                ">
-                        </div>
                     </div>
                 </div>
             </div>
@@ -95,23 +81,29 @@
             <ul>
                 <li>
                     <i class="fa fa-caret-up"></i>
-                    <p class="font-bold">Welcome to GO Bella - Slide 1</p>
+                    <p class="font-bold">
+                        Power Your Lifestyle
+                    </p>
                     <small>
-                        This is a sample landing page for a product
+                        Say goodbye to sugar crashes
                     </small>
                 </li>
                 <li>
                     <i class="fa fa-caret-up"></i>
-                    <p class="font-bold">The best product in the market - Slide 2</p>
+                    <p class="font-bold">
+                        Orange Flavor, Natural Boost
+                    </p>
                     <small>
-                        Lorem ipsum dolor sit amet, consectetur.
+                        Delicious way to boost your energy
                     </small>
                 </li>
                 <li>
                     <i class="fa fa-caret-up"></i>
-                    <p class="font-bold">Get it now for $99 - Slide 3</p>
+                    <p class="font-bold">
+                        Vitamin-Pack For a Life Full of Energy
+                    </p>
                     <small>
-                        Lorem ipsum dolor sit amet, consectetur.
+                        Potent blend of vitamins
                     </small>
                 </li>
             </ul>
@@ -130,7 +122,7 @@
                     margin: 10,
                     nav: false,
                     dots: false,
-                    autoplay: true,
+                    autoplay: false,
                     autoplayTimeout: 5000,
                     autoplayHoverPause: true,
                     responsive: {
