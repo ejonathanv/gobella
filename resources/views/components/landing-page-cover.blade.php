@@ -5,9 +5,9 @@
         <!-- Slide 1 -->
         <div class="slide-container one" 
             style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_two.jpg') }})">
-            <div class="container">
-                <div class="slide flex-col md:flex-row space-y-7 md:space-y-0 md:space-x-24 text-center md:text-left">
-                    <div class="w-full md:w-1/2">
+            <div class="container h-full !p-0">
+                <div class="slide h-full flex-col md:flex-row md:space-y-0 !space-x-0 md:!space-x-24 text-center md:text-left">
+                    <div class="w-full md:w-1/2 px-6 md:p-0">
                         <h1 class="mb-7 md:mb-7 !text-primary">
                             Power Your Lifestyle with Go Bella Wellness
                         </h1>
@@ -19,21 +19,23 @@
                             <span>Buy Now for $99</span>
                         </a>
                     </div>
-                    <div class="w-full md:w-1/2 flex-1">
+                    <div class="w-full md:w-1/2 mt-auto">
+                        <img src="{{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_one_mobile.jpg') }}" alt="Go Bella Wellness" class="!block md:!hidden">
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Slide 2 -->
-        <div class="slide-container two" style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness-2.jpg') }})">
-            <div class="container">
-                <div class="slide flex flex-col md:flex-row space-y-7 md:space-y-0 md:space-x-24">
-                    <div class="w-full md:w-1/2">
-                        <h1 class="mb-7 md:mb-7">
+        <div class="slide-container one" 
+            style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness-2.jpg') }})">
+            <div class="container !p-0 h-full">
+                <div class="slide h-full flex-col md:flex-row md:space-y-0 !space-x-0 md:!space-x-24 text-center md:text-left">
+                    <div class="w-full md:w-1/2 px-6 md:p-0">
+                        <h1 class="mb-7 md:mb-7 !text-primary">
                             Orange Flavor, Natural Boost <br> Energize Your Life!
                         </h1>
-                        <p class="mb-7 md:mb-7">
+                        <p class="mb-7 md:mb-7 !text-dark">
                             Discover the delicious way to boost your energy with Go Bella Wellness. Infused with a delightful orange flavor, our supplement is free from sugar and artificial additives.
                         </p>
                         <a href="#" class="highlight-btn lg">
@@ -41,7 +43,8 @@
                             <span>Buy Now for $99</span>
                         </a>
                     </div>
-                    <div class="w-full md:w-1/2">
+                    <div class="w-full md:w-1/2 mt-auto">
+                        <img src="{{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_two_mobile.jpg') }}" alt="Go Bella Wellness" class="!block md:!hidden">
                     </div>
                 </div>
             </div>
@@ -49,7 +52,7 @@
 
         <!-- Slide 3 -->
         <div class="slide-container video">
-            <video autoplay loop muted playsinline>
+            <video autoplay muted loop playsinline>
                 <source src="{{ asset('landing-page/template-imgs/video/7241750-uhd_3840_2160_24fps.mp4') }}" type="video/mp4">
             </video>
             <div class="gradient" style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness-gradient-bg.png') }})">

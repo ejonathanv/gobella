@@ -1,5 +1,5 @@
 <section class="landing-page-slogan" style="background-image: url('https://placehold.co/1500x600')">
-    <video autoplay muted loop>
+    <video autoplay muted loop playsinline>
         <source src="{{ asset('landing-page/template-imgs/video/2786540-hd_1280_720_25fps.mp4') }}" type="video/mp4">
     </video>
     <div class="container text-left flex flex-col md:flex-row items-stretch space-x-16">
