@@ -24,7 +24,7 @@ body{
     @apply bg-secondary text-light font-bold uppercase px-6 py-3 rounded inline-block items-center space-x-2 border-b-2 border-secondary;
 }
 .highlight-btn{
-    @apply bg-highlight text-dark font-bold uppercase px-6 py-3 rounded inline-block items-center space-x-2 border-b-2 border-secondary;
+    @apply inline-block bg-highlight text-dark font-bold uppercase px-6 py-3 rounded inline-block items-center space-x-2 border-b-2 border-secondary;
 }
 .highlight-btn:hover{
     @apply bg-highlight-100;
@@ -63,6 +63,11 @@ body{
     @apply fixed bottom-4 left-4 w-96 bg-highlight p-5 rounded shadow-lg text-sm font-bold text-primary;
     z-index: 999;
 }
+@media screen and (max-width: 1080px) {
+    .cookies-banner{
+        @apply bottom-0 left-0 w-full;
+    }
+}
 /* TITLES & PARAGRAPHS */
 h1{
     @apply text-6xl font-bold mb-5;
@@ -81,9 +86,32 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 400;
     font-style: normal;
 }
+
+@media screen and (max-width: 1080px) {
+    h1{
+        @apply text-5xl;
+    }
+    h2{
+        @apply text-3xl;
+    }
+    h3{
+        @apply text-xl;
+    }
+    h4{
+        @apply text-lg;
+    }
+}
+
 .slogan{
     @apply text-4xl font-bold mb-5;
 }
+
+@media screen and (max-width: 1080px) {
+    .slogan{
+        @apply text-2xl;
+    }
+}
+
 /* LANDING PAGE HEADER */
 .landing-page-header{
     @apply bg-white py-4 fixed top-0 left-0 w-full shadow-md;
@@ -93,7 +121,7 @@ h1, h2, h3, h4, h5, h6{
     @apply h-16;
 }
 .landing-page-nav{
-    @apply flex items-center space-x-5;
+    @apply items-center space-x-5;
 }
 .landing-page-nav a{
     @apply text-secondary font-bold text-sm uppercase relative;
@@ -144,8 +172,9 @@ h1, h2, h3, h4, h5, h6{
 /* LANDING PAGE COVER */
 .landing-page-cover{
     padding-top: 92px;
-    @apply bg-primary relative shadow overflow-hidden;
+    @apply relative shadow overflow-hidden;
     z-index: 2;
+    background-color: #e4d7cf
 }
 .landing-page-cover .curves{
     @apply absolute top-0 left-0 w-full h-full;
@@ -158,6 +187,7 @@ h1, h2, h3, h4, h5, h6{
     min-height: 600px;
     @apply flex items-center justify-center bg-cover bg-center relative;
 }
+
 .landing-page-cover .slide-container.video video{
     @apply absolute top-0 left-0 w-full h-full object-cover;
     z-index: 1;
@@ -173,20 +203,20 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .landing-page-cover .slide{
-    @apply h-full flex items-center justify-center space-x-24 relative;
+    @apply h-full flex items-center justify-center relative;
     z-index: 2;
 }
 .landing-page-cover .slide h1{
-    @apply text-6xl font-bold mb-7 text-light;
+    @apply text-6xl font-bold text-light;
 }
 .landing-page-cover .slide h2{
-    @apply text-2xl font-bold mb-7 text-light;
+    @apply text-2xl font-bold text-light;
 }
 .landing-page-cover .slide p{
-    @apply text-lg mb-7 text-light;
+    @apply text-lg text-light;
 }
 .landing-page-cover .thumbs{
-    @apply flex justify-center items-center space-x-5 bg-secondary relative;
+    @apply justify-center items-center space-x-5 bg-secondary relative;
     z-index: 2;
 }
 .landing-page-cover .thumbs ul{
@@ -220,24 +250,57 @@ h1, h2, h3, h4, h5, h6{
         @apply space-x-6;
     }
     .landing-page-cover .slide h1{
-        @apply text-5xl mb-5;
+        @apply text-4xl;
     }
     .landing-page-cover .slide h2{
-        @apply text-xl mb-5;
+        @apply text-xl;
     }
     .landing-page-cover .slide p{
-        @apply text-base mb-5;
+        @apply text-base;
     }
+
+    .landing-page-cover .slide-container{
+        height: calc(100vh - 150px);
+        display: flex;
+        align-items: start;
+        padding-top: 70px;
+    }
+
+    .landing-page-cover .slide-container.one{
+        background-position: 92% bottom;
+        background-size: 227%;
+        background-repeat: no-repeat;
+    }
+
+    .landing-page-cover .slide-container.two{
+        background-position: 62% bottom;
+        background-size: 560%;
+        background-repeat: no-repeat;
+    }
+
 }
 
 /* ABOUT */
 .landing-page-about{
     @apply pb-16;
 }
+
+@media screen and (max-width: 1081px) {
+    .landing-page-about{
+        @apply pb-48;
+    }
+}
+
+
 /* SLOGAN */
 .landing-page-slogan{
     @apply bg-primary py-32 bg-cover bg-center relative flex items-center justify-center;
     min-height: 600px;
+}
+@media screen and (max-width: 1081px) {
+    .landing-page-slogan{
+        @apply pt-48 pb-20;
+    }
 }
 .landing-page-slogan video{
     @apply absolute top-0 left-0 w-full h-full object-cover;
@@ -279,6 +342,12 @@ table.landing-page-table td{
     @apply flex flex-col flex-1 pl-16 pr-32 py-16 text-center items-center
 }
 
+@media screen and (max-width: 1081px) {
+    .landing-page-suscription-form .suscription-form{
+        @apply pl-6 pr-6;
+    }
+}
+
 .landing-page-suscription-form .suscription-form input{
     @apply w-full bg-light border-b border-secondary p-3 rounded active:outline-none focus:outline-none focus:border-primary ring-0;
 }
@@ -298,4 +367,49 @@ table.landing-page-table td{
 
 .landing-page-footer .logo img{
     @apply h-16;
+}
+
+.landing-page-menu-responsive-content{
+    @apply bg-white p-10 fixed top-0 left-0 w-full h-full flex flex-col items-center justify-center;
+    z-index: 999;
+}
+
+.landing-page-menu-responsive-content .landing-page-menu-responsive-social-media{
+    @apply flex flex-col items-center uppercase font-bold text-sm;
+}
+
+.landing-page-menu-responsive-social-media .social-media-icons{
+    @apply flex items-center space-x-5 text-2xl;
+}
+
+.landing-page-menu-responsive-nav{
+    @apply flex flex-col items-center space-y-5;
+}
+.landing-page-menu-responsive-nav a{
+    @apply text-primary font-bold text-xl uppercase relative;
+}
+
+.large-picture{
+    z-index: -1;
+    margin-top: -160px;
+    overflow-x: hidden;
+}
+
+.large-picture img{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1081px) {
+    .large-picture{
+        margin-top: -150px;
+        z-index: -1;
+    }
+
+    .large-picture img{
+        width: 200%;
+        max-width: 200%;
+        position: relative;
+        left: calc(50% - 104%);
+    }
 }

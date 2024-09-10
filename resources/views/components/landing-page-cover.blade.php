@@ -1,16 +1,17 @@
-<section class="landing-page-cover" x-data="initCover()">
+<section class="landing-page-cover" x-data="initCover()" id="homeSection">
     <div style="background-image: url({{ asset('landing-page/template-imgs/cover-curves.svg') }})" class="curves"></div>
     <!-- Slides -->
     <div class="owl-carousel owl-theme">
         <!-- Slide 1 -->
-        <div class="slide-container" style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness.jpg') }})">
+        <div class="slide-container one" 
+            style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_two.jpg') }})">
             <div class="container">
-                <div class="slide">
-                    <div class="w-1/2">
-                        <h1>
+                <div class="slide flex-col md:flex-row space-y-7 md:space-y-0 md:space-x-24 text-center md:text-left">
+                    <div class="w-full md:w-1/2">
+                        <h1 class="mb-7 md:mb-7 !text-primary">
                             Power Your Lifestyle with Go Bella Wellness
                         </h1>
-                        <p>
+                        <p class="mb-7 md:mb-7 !text-dark">
                             Say goodbye to sugar crashes and hello to pure, sustained energy with Go Bella Wellness. Our supplement is crafted with natural ingredients, including essential vitamins, selenium, and L-theanine, to power your day. 
                         </p>
                         <a href="#" class="highlight-btn lg">
@@ -18,22 +19,21 @@
                             <span>Buy Now for $99</span>
                         </a>
                     </div>
-                    <div class="w-1/2">
-                        
+                    <div class="w-full md:w-1/2 flex-1">
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Slide 2 -->
-        <div class="slide-container" style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness-2.jpg') }})">
+        <div class="slide-container two" style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness-2.jpg') }})">
             <div class="container">
-                <div class="slide">
-                    <div class="w-1/2">
-                        <h1>
+                <div class="slide flex flex-col md:flex-row space-y-7 md:space-y-0 md:space-x-24">
+                    <div class="w-full md:w-1/2">
+                        <h1 class="mb-7 md:mb-7">
                             Orange Flavor, Natural Boost <br> Energize Your Life!
                         </h1>
-                        <p>
+                        <p class="mb-7 md:mb-7">
                             Discover the delicious way to boost your energy with Go Bella Wellness. Infused with a delightful orange flavor, our supplement is free from sugar and artificial additives.
                         </p>
                         <a href="#" class="highlight-btn lg">
@@ -41,7 +41,7 @@
                             <span>Buy Now for $99</span>
                         </a>
                     </div>
-                    <div class="w-1/2">
+                    <div class="w-full md:w-1/2">
                     </div>
                 </div>
             </div>
@@ -56,12 +56,12 @@
 
             </div>
             <div class="container">
-                <div class="slide">
-                    <div class="w-1/2">
-                        <h1>
+                <div class="slide flex flex-col md:flex-row space-y-7 md:space-y-0 md:space-x-24">
+                    <div class="w-full md:w-1/2">
+                        <h1 class="mb-7 md:mb-7">
                             Vitamin-Pack <br> For a Life Full of Energy
                         </h1>
-                        <p>
+                        <p class="mb-7 md:mb-7">
                             Go Bella Wellness brings you a potent blend of vitamins, selenium, and L-theanine in a tasty, orange-flavored supplement. Specially formulated to support your active lifestyle, it offers a healthy, sugar-free way to stay energized and focused. 
                         </p>
                         <a href="#" class="highlight-btn lg">
@@ -69,14 +69,14 @@
                             <span>Buy Now for $99</span>
                         </a>
                     </div>
-                    <div class="w-1/2">
+                    <div class="w-full md:w-1/2">
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Thumbs -->
-    <div class="thumbs">
+    <div class="thumbs hidden md:flex">
         <div class="container">
             <ul>
                 <li>
@@ -124,7 +124,7 @@
                     dots: false,
                     autoplay: false,
                     autoplayTimeout: 5000,
-                    autoplayHoverPause: true,
+                    autoplayHoverPause: false,
                     responsive: {
                         0: {
                             items: 1

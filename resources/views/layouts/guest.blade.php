@@ -23,6 +23,12 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased" x-init="new WOW().init();">
+        <!-- HEADER -->
+        <x-landing-page-header />
         {{ $slot }}
+        <!-- SUSCRIPTION FORM -->
+        <x-landing-page-suscription-form />
+        <!-- FOOTER -->
+        <x-landing-page-footer />
     </body>
 </html>

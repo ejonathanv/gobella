@@ -1,6 +1,4 @@
 <x-guest-layout>
-    <!-- HEADER -->
-    <x-landing-page-header />
     <!-- SOCIAL MEDIA ICONS -->
     <x-landing-page-social-media-icons />
     <!-- COOKIES -->
@@ -11,6 +9,8 @@
     <x-landing-page-marquee />
     <!-- ABOUT US -->
     <x-landing-page-about-us />
+    <!-- LARGE PICTURE -->
+    <x-landing-page-large-picture />
     <!-- SLOGAN -->
     <x-landing-page-slogan />
     {{--
@@ -19,8 +19,4 @@
     --}}
     <!-- TESTIMONIALS -->
     <x-landing-page-testimonials />
-    <!-- SUSCRIPTION FORM -->
-    <x-landing-page-suscription-form />
-    <!-- FOOTER -->
-    <x-landing-page-footer />
 </x-guest-layout>

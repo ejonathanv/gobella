@@ -1,13 +1,13 @@
-<section class="landing-page-testimonials">
+<section class="landing-page-testimonials" id="testimonialsSection">
     <div class="container">
         <p class="text-center text-base uppercase text-light mb-4 tracking-widest">
             Testimonials
         </p>
-        <h2 class="text-light text-center !text-4xl">
+        <h2 class="text-light text-center text-2xl md:text-4xl">
             What Our Customers Say
         </h2>
 
-        <div class="flex items-stretch justify-between space-x-7 mt-16">
+        <div class="flex flex-col md:flex-row items-stretch justify-between space-y-6 md:space-y-0 md:space-x-7 mt-16">
             <div class="testimonial wow animate__animated animate__fadeInUp">
                 <i class="fa fa-quote-left"></i>
                 <p class="text-center">

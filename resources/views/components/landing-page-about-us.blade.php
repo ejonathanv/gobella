@@ -1,17 +1,17 @@
-<section class="landing-page-about relative">
-    <img src="{{ asset('landing-page/template-imgs/orange-right.svg') }}" class="absolute" alt="Orange Right" style="bottom: 2rem; left:0; width: 160px">
+<section class="landing-page-about relative z-10">
+    <img src="{{ asset('landing-page/template-imgs/orange-right.svg') }}" class="absolute hidden md:inline-block" alt="Orange Right" style="bottom: 2rem; left:0; width: 160px">
     <img src="{{ asset('landing-page/template-imgs/orange-left.svg') }}" class="absolute" alt="Orange Right" style="bottom: 2rem; right:0; width: 160px">
     <div class="container">
-        <div class="w-9/12 mx-auto">
+        <div class="w-full md:w-9/12 mx-auto" id="benefitsSection">
             <h2 class="text-center text-primary wow animate__animated animate__fadeInUp">
                 Discover the Benefits of Go Bella Wellness
             </h2>
-            <p class="text-center text-lg">
+            <p class="text-center text-base md:text-lg">
                 At Go Bella Wellness, we believe in providing you with the best possible energy supplement, crafted to enhance your daily life naturally. Our product stands out with its unique combination of beneficial ingredients and health-focused features:
             </p>
         </div>
-        <div class="w-10/12 mx-auto mt-10">
-            <div class="flex items-center space-x-10">
+        <div class="w-full md:w-10/12 mx-auto mt-10">
+            <div class="flex items-center space-x-0 md:space-x-10">
                 <div class="w-1/3">
                     <img src="{{ asset('landing-page/template-imgs/no-suggar.svg') }}" alt="No Sugar Added" class="mx-auto w-full h-auto wow animate__animated animate__fadeInUp" data-wow-delay="0s">
                 </div>
@@ -23,11 +23,11 @@
                 </div>
             </div>
         </div>
-        <div class="mt-16 flex items-start space-x-24">
-            <div class="w-6/12 relative">
+        <div class="mt-16 flex flex-col md:flex-row items-start space-y-12 md:space-y-0 md:space-x-24" id="factsSection">
+            <div class="w-full md:w-6/12 relative">
                 <img src="{{ asset('landing-page/template-imgs/jar-go-bella-wellness-lg.jpg') }}" alt="Go Bella Wellness Jar" class="rounded-lg shadow-lg w-full h-auto wow animate__animated animate__fadeInLeft" data-wow-delay=".8s">
             </div>
-            <div class="w-6/12">
+            <div class="w-full md:w-6/12">
                 <h2 class="text-primary">
                     Supplement Facts
                 </h2>
