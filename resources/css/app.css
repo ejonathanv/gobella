@@ -280,6 +280,24 @@ h1, h2, h3, h4, h5, h6{
 
 }
 
+@media screen and (max-width: 428px) {
+    .landing-page-cover .slide-container{
+        height: calc(100vh - 150px);
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .landing-page-cover .slide-container{
+        height: calc(100vh - 80px);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .landing-page-cover .slide-container{
+        height: calc(100vh + 80px);
+    }
+}
+
 /* ABOUT */
 .landing-page-about{
     @apply pb-16;
