@@ -5,7 +5,7 @@
         <!-- Slide 1 -->
         <div class="slide-container one" 
             style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_two.jpg') }})">
-            <div class="container h-full !p-0">
+            <div class="container h-full !p-0 md:!px-6">
                 <div class="slide h-full flex-col md:flex-row md:space-y-0 !space-x-0 md:!space-x-24 text-center md:text-left">
                     <div class="w-full md:w-1/2 px-6 md:p-0">
                         <h1 class="mb-7 md:mb-7 !text-primary">
@@ -84,7 +84,7 @@
             <ul>
                 <li>
                     <i class="fa fa-caret-up"></i>
-                    <p class="font-bold">
+                    <p class="font-bold text-sm md:text-sm xl:text-base">
                         Power Your Lifestyle
                     </p>
                     <small>
@@ -93,7 +93,7 @@
                 </li>
                 <li>
                     <i class="fa fa-caret-up"></i>
-                    <p class="font-bold">
+                    <p class="font-bold text-sm md:text-sm xl:text-base">
                         Orange Flavor, Natural Boost
                     </p>
                     <small>
@@ -102,7 +102,7 @@
                 </li>
                 <li>
                     <i class="fa fa-caret-up"></i>
-                    <p class="font-bold">
+                    <p class="font-bold text-sm md:text-sm xl:text-base">
                         Vitamin-Pack For a Life Full of Energy
                     </p>
                     <small>

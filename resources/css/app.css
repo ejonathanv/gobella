@@ -190,6 +190,17 @@ h1, h2, h3, h4, h5, h6{
 
 @media screen and (max-width: 1081px) {
     .landing-page-cover .slide-container{
+        min-height: 450px;
+    }
+    .landing-page-cover .slide-container.one{
+        background-position: 75% bottom !important;
+        background-size: 120% !important;
+        background-repeat: no-repeat !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .landing-page-cover .slide-container{
         background-image: none !important;
         min-height: 700px;
         height: 700px;
@@ -197,6 +208,8 @@ h1, h2, h3, h4, h5, h6{
         padding-top: 50px;
     }
 }
+
+
 
 .landing-page-cover .slide-container.video video{
     @apply absolute top-0 left-0 w-full h-full object-cover;
@@ -384,6 +397,21 @@ table.landing-page-table td{
     z-index: -1;
     margin-top: -160px;
     overflow-x: hidden;
+}
+
+/* Ajuste para ipad pro */
+@media screen and (max-width: 1081px) {
+    .large-picture{
+        margin-top: -200px !important;
+        z-index: -1;
+    }
+
+    .large-picture img{
+        width: 130% !important;
+        max-width: 100%;
+        position: relative;
+        left: calc(50% - 67%) !important;
+    }
 }
 
 .large-picture img{
