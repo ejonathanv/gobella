@@ -27,13 +27,13 @@
         </div>
 
         <!-- Slide 2 -->
-        <div class="slide-container one" 
+        <div class="slide-container two" 
             style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness-2.jpg') }})">
-            <div class="container !p-0 h-full">
+            <div class="container h-full !p-0 md:!px-6">
                 <div class="slide h-full flex-col md:flex-row md:space-y-0 !space-x-0 md:!space-x-24 text-center md:text-left">
                     <div class="w-full md:w-1/2 px-6 md:p-0">
                         <h1 class="mb-7 md:mb-7 !text-primary">
-                            Orange Flavor, Natural Boost <br> Energize Your Life!
+                            Orange Flavor, Natural Boost™ Energize Your Life!
                         </h1>
                         <p class="mb-7 md:mb-7 !text-dark">
                             Discover the delicious way to boost your energy with Go Bella Wellness. Infused with a delightful orange flavor, our supplement is free from sugar and artificial additives.
@@ -84,7 +84,7 @@
             <ul>
                 <li>
                     <i class="fa fa-caret-up"></i>
-                    <p class="font-bold text-sm md:text-sm xl:text-base">
+                    <p>
                         Power Your Lifestyle
                     </p>
                     <small>
@@ -93,7 +93,7 @@
                 </li>
                 <li>
                     <i class="fa fa-caret-up"></i>
-                    <p class="font-bold text-sm md:text-sm xl:text-base">
+                    <p>
                         Orange Flavor, Natural Boost
                     </p>
                     <small>
@@ -102,7 +102,7 @@
                 </li>
                 <li>
                     <i class="fa fa-caret-up"></i>
-                    <p class="font-bold text-sm md:text-sm xl:text-base">
+                    <p>
                         Vitamin-Pack For a Life Full of Energy
                     </p>
                     <small>

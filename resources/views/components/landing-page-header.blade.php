@@ -37,7 +37,7 @@
             <img src="{{ asset('landing-page/go-bella-wellness-logo.svg') }}" alt="Go Bella Wellness Logo">
         </a>
         <!-- Menu de navegacion -->
-        <nav class="landing-page-nav hidden lg:flex">
+        <nav class="landing-page-nav hidden sm:flex">
             <a href="#" class="active" @click.prevent="goTo('homeSection')">
                 Home
             </a>
@@ -55,7 +55,7 @@
             </a>
         </nav>
         <!-- Menu responsive -->
-        <div class="landing-page-menu-responsive inline-block lg:hidden">
+        <div class="landing-page-menu-responsive inline-block sm:hidden">
             <a href="#" @click.prevent="toggleMenu()" class="text-2xl relative" style="z-index: 9999">
                 <i x-show="! open" class="fas fa-bars"></i>
                 <i x-show="open" class="fas fa-times"></i>
