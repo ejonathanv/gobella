@@ -414,6 +414,21 @@ table.landing-page-table td{
     }
 }
 
+/* Ajuste pare iphone 12 */
+@media screen and (max-width: 390px) {
+    .large-picture{
+        margin-top: -100px !important;
+        z-index: -1;
+    }
+
+    .large-picture img{
+        width: 200% !important;
+        max-width: 100%;
+        position: relative;
+        left: calc(50% - 102%) !important;
+    }
+}
+
 .large-picture img{
     width: 100%;
 }
