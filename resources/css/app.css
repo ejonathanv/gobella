@@ -267,6 +267,31 @@ h1, h2, h3, h4, h5, h6{
 .landing-page-cover .slide p{
     @apply text-lg text-light;
 }
+
+@media screen and (max-width: 1081px) {
+    .landing-page-cover .slide h1{
+        @apply text-4xl;
+    }
+    .landing-page-cover .slide h2{
+        @apply text-xl;
+    }
+    .landing-page-cover .slide p{
+        @apply text-base;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .landing-page-cover .slide h1{
+        @apply text-2xl !important;
+    }
+    .landing-page-cover .slide h2{
+        @apply text-lg !important;
+    }
+    .landing-page-cover .slide p{
+        @apply text-xs !important;
+    }
+}
+
 .landing-page-cover .thumbs{
     @apply justify-center items-center space-x-5 bg-secondary relative;
     z-index: 2;
@@ -563,3 +588,36 @@ table.landing-page-table td{
         left: calc(50% - 104%);
     }
 }
+
+.owl-dots{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.owl-theme .owl-dots{
+    visibility: hidden;
+}
+
+
+
+.owl-theme .owl-dots .owl-dot span{
+    @apply bg-light;
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    @apply bg-secondary;
+}
+
+@media screen and (max-width: 768px) {
+    .owl-theme .owl-dots{
+        visibility: visible;
+    }
+}
+

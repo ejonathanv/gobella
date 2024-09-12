@@ -33,14 +33,17 @@
                 <div class="slide h-full flex-col md:flex-row md:space-y-0 !space-x-0 md:!space-x-24 text-center md:text-left">
                     <div class="w-full md:w-1/2 px-6 md:p-0">
                         <h1 class="mb-7 md:mb-7 !text-primary">
-                            Orange Flavor, Natural Boost™ Energize Your Life!
+                            Natural Energy Supplements with Orange Flavor.
                         </h1>
+                        <h3 class="mb-7 md:mb-7 !text-dark">
+                            Go Bella Wellness™
+                        </h3>
                         <p class="mb-7 md:mb-7 !text-dark">
-                            Discover the delicious way to boost your energy with Go Bella Wellness. Infused with a delightful orange flavor, our supplement is free from sugar and artificial additives.
+                            Boost your daily energy and performance with Go Bella Wellness™ Energy Supplements. Our all-natural, sugar-free formula with refreshing orange flavor supports sustained energy and an active lifestyle.
                         </p>
                         <a href="#" class="highlight-btn lg">
                             <i class="fas fa-shopping-cart text-primary"></i>
-                            <span>Buy Now for $99</span>
+                            <span>Buy Now for $39.99</span>
                         </a>
                     </div>
                     <div class="w-full md:w-1/2 mt-auto">
@@ -59,8 +62,8 @@
 
             </div>
             <div class="container h-full !p-0 md:!px-6 xl:!px-0">
-                <div class="slide flex flex-col md:flex-row space-y-7 md:space-y-0 md:space-x-24">
-                    <div class="w-full md:w-1/2">
+            <div class="slide h-full flex-col md:flex-row md:space-y-0 !space-x-0 md:!space-x-24 text-center md:text-left">
+                    <div class="w-full md:w-1/2 px-6 md:p-0">
                         <h1 class="mb-7 md:mb-7">
                             Vitamin-Pack <br> For a Life Full of Energy
                         </h1>
@@ -124,7 +127,7 @@
                     loop: true,
                     margin: 10,
                     nav: false,
-                    dots: false,
+                    dots: true,
                     autoplay: false,
                     autoplayTimeout: 5000,
                     autoplayHoverPause: false,

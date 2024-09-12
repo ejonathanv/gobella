@@ -8,14 +8,11 @@
                 <p class="mb-6">
                     &copy; {{ date('Y') }} Go Bella Wellness. All rights reserved.
                 </p>
-                <div class="flex items-center justify-end space-x-8">
-                    <a href="#">
+                <div class="flex items-center justify-end space-x-8 text-2xl">
+                    <a href="https://www.facebook.com/people/Go-Bella-Wellness/61563242682872" target="_blank" class="hover:text-secondary">
                         <i class="fab fa-facebook"></i>
                     </a>
-                    <a href="#">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
+                    <a href="https://www.instagram.com/gobellawellness" target="_blank" class="hover:text-secondary">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </div>
