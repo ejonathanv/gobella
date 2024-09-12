@@ -120,7 +120,7 @@
                             </a>
                         </div>
                         <a href="#" class="highlight-btn">
-                            Buy Now
+                            Buy Now for $39.99
                         </a>
                     </div>
                 </div>

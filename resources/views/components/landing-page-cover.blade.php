@@ -9,18 +9,18 @@
                 <div class="slide h-full flex-col md:flex-row md:space-y-0 !space-x-0 md:!space-x-24 text-center md:text-left">
                     <div class="w-full md:w-1/2 px-6 md:p-0">
                         <h1 class="mb-7 md:mb-7 !text-primary">
-                            Power Your Lifestyle with Go Bella Wellness
+                            Power Your Lifestyle with Go Bella Wellness Energy Supplements
                         </h1>
                         <p class="mb-7 md:mb-7 !text-dark">
-                            Say goodbye to sugar crashes and hello to pure, sustained energy with Go Bella Wellness. Our supplement is crafted with natural ingredients, including essential vitamins, selenium, and L-theanine, to power your day. 
+                            Say goodbye to sugar crashes and hello to sustained energy with Go Bella Wellness. Our energy supplements are crafted with natural ingredients, including essential vitamins, selenium, and L-theanine, designed to enhance your daily performance and vitality.
                         </p>
                         <a href="#" class="highlight-btn lg">
                             <i class="fas fa-shopping-cart text-primary"></i>
-                            <span>Buy Now for $99</span>
+                            <span>Buy Now for $39.99</span>
                         </a>
                     </div>
                     <div class="w-full md:w-1/2 mt-auto">
-                        <img src="{{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_one_mobile.jpg') }}" alt="Go Bella Wellness" class="!block md:!hidden">
+                        <img src="{{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_one_mobile.jpg') }}" alt="Go Bella Wellness Energy Supplements" class="!block md:!hidden">
                     </div>
                 </div>
             </div>

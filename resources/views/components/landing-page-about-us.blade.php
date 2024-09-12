@@ -85,7 +85,7 @@
                 </table>
                 <a href="#" class="highlight-btn lg mt-10 wow animate__animated animate__fadeInUp">
                     <i class="fas fa-shopping-cart text-primary"></i>
-                    <span>Buy Now for $99</span>
+                    <span>Buy Now for $39.99</span>
                 </a>
             </div>
         </div>
