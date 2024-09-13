@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5, h6{
     position: fixed;
     top: 50%;
     right: -50px;
-    z-index: 10;
+    z-index: 9999;
     @apply flex items-center space-x-5 uppercase font-bold text-sm;
 }
 .landing-page-social-media span{
