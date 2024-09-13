@@ -2,11 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SubscriberController;
 use App\Http\Controllers\LandingPageController;
 
 Route::get('/', [LandingPageController::class, 'index'])->name('landing-page');
 Route::get('/privacy-policies', [LandingPageController::class, 'privacyPolicies'])->name('privacy-policies');
 Route::get('/shipping-and-return-policy', [LandingPageController::class, 'shippingAndReturnPolicy'])->name('shipping-and-return-policies');
+Route::resource('subscribers', SubscriberController::class)->only(['store']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -18,4 +20,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+// require __DIR__.'/auth.php';

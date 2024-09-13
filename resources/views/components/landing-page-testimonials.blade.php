@@ -32,7 +32,7 @@
 
         <div class="mt-16 flex flex-col space-y-10">
             <p class="text-center text-light">
-                Don't miss out on the opportunity to power your lifestyle with Go Bella Wellness.
+                Don't miss out on the opportunity to power your lifestyle with <i class="text-secondary">Go Bella Wellness.</i>
             </p>
 
             <div class="flex items-center justify-center">
