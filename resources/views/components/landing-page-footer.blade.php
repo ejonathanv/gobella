@@ -17,7 +17,7 @@
                     </a>
                 </div>
                 <p class="mt-6 text-center text-xs">
-                    <b>Disclaimer:</b> This product is not intended to diagnose, treat, cure, or prevent any disease. Results may vary from person to person. Consult your doctor before using this supplement if you are pregnant, nursing, have a medical condition, or are taking any medications. This product is not a medical treatment, and its consumption is at your own risk. The manufacturer and seller are not responsible for any adverse reactions you may experience. Keep this product out of reach of children.
+                    <b>Disclaimer:</b> This product is not intended to diagnose, treat, cure, or prevent any disease. Results may vary from person to person. Consult your doctor before using this supplement if you are pregnant, nursing, have a medical condition, or are taking any medications. This product is not a medical treatment, and its use should be approached with care and discretion. The manufacturer and seller cannot be held responsible for any adverse reactions. This product is not intended for use by individuals under the age of 18. Keep out of reach of children.
                 </p>
                 <div class="flex items-center space-x-4 text-xs font-bold mt-5">
                     <a href="{{ route('privacy-policies') }}" class="underline">
