@@ -119,7 +119,7 @@
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </div>
-                        <a href="#" class="highlight-btn">
+                        <a href="{{ env('STRIPE_BUY_LINK') }}" class="highlight-btn">
                             Buy Now for $39.99
                         </a>
                     </div>
