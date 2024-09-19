@@ -72,7 +72,7 @@
                         </p>
                         <a href="{{ env('STRIPE_BUY_LINK') }}" class="highlight-btn lg">
                             <i class="fas fa-shopping-cart text-primary"></i>
-                            <span>Buy Now for $99</span>
+                            <span>Buy Now for $39.99</span>
                         </a>
                     </div>
                     <div class="w-full md:w-1/2">
