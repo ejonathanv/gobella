@@ -6,7 +6,7 @@
                     <img src="{{ asset('landing-page/go-bella-wellness-logo-light.svg') }}" alt="Go Bella Wellness Logo">
                 </a>
                 <p class="mb-6">
-                    &copy; {{ date('Y') }} Go Bella Wellness. All rights reserved.
+                    &copy; {{ date('Y') }} Go Bella Wellness Inc. All rights reserved.
                 </p>
                 <div class="flex items-center justify-end space-x-8 text-2xl">
                     <a href="https://www.facebook.com/people/Go-Bella-Wellness/61563242682872" target="_blank" class="hover:text-secondary">
