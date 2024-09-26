@@ -38,7 +38,7 @@
 
         <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-        <script src="https://kit.fontawesome.com/133291f590.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/1b2e97ddb1.js" crossorigin="anonymous"></script>
         <script src="{{ asset('js/wow.min.js') }}" defer></script>
         <script src="{{ asset('js/owl.carousel.min.js') }}" defer></script>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
