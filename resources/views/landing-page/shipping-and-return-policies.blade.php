@@ -23,8 +23,10 @@
             <h4 class="mt-6">Customs and Import Fees</h4>
             <p>For international orders, any customs duties or import fees are the responsibility of the recipient. These fees are not included in the purchase price and may vary based on the destination country. Please check with your local customs office for more information before placing an order.</p>
 
+            {{--
             <h4 class="mt-6">Damaged Products</h4>
             <p>If your product arrives damaged or defective, please contact us within 48 hours of delivery at info@gobellawellness.com. Be sure to include your order number and photos of the damage, and we will work with you to resolve the issue.</p>
+            --}}
 
             <h4 class="mt-6">Order Cancellations</h4>
             <p>Cancellations are allowed within 24 hours of placing your order. Once the order has been processed or shipped, cancellations are no longer possible.</p>

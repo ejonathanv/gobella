@@ -51,5 +51,7 @@
         <x-landing-page-suscription-form />
         <!-- FOOTER -->
         <x-landing-page-footer />
+        <!-- Whatsapp Chat -->
+        <x-whatsapp-chat />
     </body>
 </html>

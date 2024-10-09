@@ -71,8 +71,9 @@
             <a href="#" class="testimonialsSectionLink" @click.prevent="goTo('testimonialsSection')">
                 Testimonials
             </a>
-            <a href="#" class="contactSectionLink" @click.prevent="goTo('contactSection')">
-                Contact
+            <a href="{{ env('WHATSAPP_NUMBER') }}" class="contactSectionLink flex space-x-2 items-center">
+                <i class="fab fa-whatsapp"></i>
+                <span>Contact Us</span>
             </a>
         </nav>
         <!-- Menu responsive -->
@@ -101,8 +102,9 @@
                         <a href="#" @click.prevent="goTo('testimonialsSection')">
                             Testimonials
                         </a>
-                        <a href="#" @click.prevent="goTo('contactSection')">
-                            Contact
+                        <a href="{{ env('WHATSAPP_NUMBER') }}" class="flex space-x-2 items-center">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Contact Us</span>
                         </a>
                     </nav>
                     <!-- Redes sociales -->
@@ -114,9 +116,6 @@
                             </a>
                             <a href="#">
                                 <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-twitter"></i>
                             </a>
                         </div>
                         <a href="{{ env('STRIPE_BUY_LINK') }}" class="highlight-btn">
