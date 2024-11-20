@@ -36,10 +36,9 @@
             </p>
 
             <div class="flex items-center justify-center">
-                <a href="{{ env('STRIPE_BUY_LINK') }}" class="highlight-btn lg">
-                    <i class="fas fa-shopping-cart text-primary"></i>
-                    <span>Buy Now for $39.99</span>
-                </a>
+                <div class="shopify-button mt-10">
+                    <div class="buy-button-product"></div>
+                </div>
             </div>
         </div>
     </div>

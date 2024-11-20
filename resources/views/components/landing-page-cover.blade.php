@@ -14,10 +14,15 @@
                         <p class="mb-7 md:mb-7 !text-dark">
                             Say goodbye to sugar crashes and hello to sustained energy with Go Bella Wellness. Our energy supplements are crafted with natural ingredients, including essential vitamins, selenium, and L-theanine, designed to enhance your daily performance and vitality.
                         </p>
-                        <a href="{{ env('STRIPE_BUY_LINK') }}" class="highlight-btn lg">
-                            <i class="fas fa-shopping-cart text-primary"></i>
-                            <span>Buy Now for $39.99</span>
-                        </a>
+                        {{--
+                            <a href="{{ env('STRIPE_BUY_LINK') }}" class="highlight-btn lg">
+                                <i class="fas fa-shopping-cart text-primary"></i>
+                                <span>Buy Now for $39.99</span>
+                            </a>
+                        --}}
+                        <div class="shopify-button">
+                            <div class="buy-button-product"></div>
+                        </div>
                     </div>
                     <div class="w-full md:w-1/2 mt-auto">
                         <img src="{{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_one_mobile.jpg') }}" alt="Go Bella Wellness Energy Supplements" class="!block md:!hidden">
@@ -41,10 +46,9 @@
                         <p class="mb-7 md:mb-7 !text-dark">
                             Boost your daily energy and performance with Go Bella Wellness™ Energy Supplements. Our all-natural, sugar-free formula with refreshing orange flavor supports sustained energy and an active lifestyle.
                         </p>
-                        <a href="{{ env('STRIPE_BUY_LINK') }}" class="highlight-btn lg">
-                            <i class="fas fa-shopping-cart text-primary"></i>
-                            <span>Buy Now for $39.99</span>
-                        </a>
+                        <div class="shopify-button">
+                            <div class="buy-button-product"></div>
+                        </div>
                     </div>
                     <div class="w-full md:w-1/2 mt-auto">
                         <img src="{{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_two_mobile.jpg') }}" alt="Go Bella Wellness" class="!block md:!hidden">
@@ -70,10 +74,9 @@
                         <p class="mb-7 md:mb-7">
                             Go Bella Wellness brings you a potent blend of vitamins, selenium, and L-theanine in a tasty, orange-flavored supplement. Specially formulated to support your active lifestyle, it offers a healthy, sugar-free way to stay energized and focused. 
                         </p>
-                        <a href="{{ env('STRIPE_BUY_LINK') }}" class="highlight-btn lg">
-                            <i class="fas fa-shopping-cart text-primary"></i>
-                            <span>Buy Now for $39.99</span>
-                        </a>
+                        <div class="shopify-button">
+                            <div class="buy-button-product"></div>
+                        </div>
                     </div>
                     <div class="w-full md:w-1/2">
                     </div>

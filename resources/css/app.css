@@ -621,3 +621,9 @@ table.landing-page-table td{
     }
 }
 
+.shopify-button{
+    position: relative;
+    left: -25px;
+    top: -20px; 
+}
+
