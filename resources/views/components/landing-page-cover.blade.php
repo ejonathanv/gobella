@@ -2,6 +2,39 @@
     <div style="background-image: url({{ asset('landing-page/template-imgs/cover-curves.svg') }})" class="curves"></div>
     <!-- Slides -->
     <div class="owl-carousel owl-theme">
+        <!-- Slide Black Friday -->
+        <div class="slide-container black-friday" 
+            style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_two_black_friday.jpg') }})">
+            <div class="container h-full !p-0 md:!px-6 xl:!px-0">
+                <div class="slide h-full flex-col md:flex-row md:space-y-0 !space-x-0 md:!space-x-24 text-center md:text-left">
+                    <div class="w-full md:w-1/2 px-6 md:p-0">
+                        <h1 class="mb-7 md:mb-7 !text-primary">
+                            <span class="text-dark">
+                                Black Friday: 
+                            </span>
+                            20% Off Our Signature Energy Supplement! 
+                        </h1>
+                        <p class="mb-7 md:mb-7 !text-dark">
+                            Boost your energy naturally this Black Friday with Go Bella Wellness Energy Supplement! 
+                            <span class="text-primary font-bold">
+                                Use code BLACKFRIDAY
+                            </span> 
+                            at checkout to save 20%. 
+                        </p>
+                        <p class="mb-7 md:mb-7 !text-dark">
+                            Don’t wait—this offer is valid for a limited time only!
+                        </p>
+                        <div class="shopify-button">
+                            <div class="buy-button-product"></div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 mt-auto">
+                        <img src="{{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_blackfriday_mobile.jpg') }}" alt="Go Bella Wellness Energy Supplements" class="!block md:!hidden">
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Slide 1 -->
         <div class="slide-container one" 
             style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_two.jpg') }})">
@@ -14,12 +47,6 @@
                         <p class="mb-7 md:mb-7 !text-dark">
                             Say goodbye to sugar crashes and hello to sustained energy with Go Bella Wellness. Our energy supplements are crafted with natural ingredients, including essential vitamins, selenium, and L-theanine, designed to enhance your daily performance and vitality.
                         </p>
-                        {{--
-                            <a href="{{ env('STRIPE_BUY_LINK') }}" class="highlight-btn lg">
-                                <i class="fas fa-shopping-cart text-primary"></i>
-                                <span>Buy Now for $39.99</span>
-                            </a>
-                        --}}
                         <div class="shopify-button">
                             <div class="buy-button-product"></div>
                         </div>
@@ -91,6 +118,15 @@
                 <li>
                     <i class="fa fa-caret-up"></i>
                     <p>
+                        Black Friday: 20% Off
+                    </p>
+                    <small>
+                        Use code BLACKFRIDAY
+                    </small>
+                </li>
+                <li>
+                    <i class="fa fa-caret-up"></i>
+                    <p>
                         Power Your Lifestyle
                     </p>
                     <small>
@@ -109,7 +145,7 @@
                 <li>
                     <i class="fa fa-caret-up"></i>
                     <p>
-                        Vitamin-Pack For a Life Full of Energy
+                        Vitamin-Pack For Energy
                     </p>
                     <small>
                         Potent blend of vitamins
