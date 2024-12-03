@@ -2,6 +2,7 @@
     <div style="background-image: url({{ asset('landing-page/template-imgs/cover-curves.svg') }})" class="curves"></div>
     <!-- Slides -->
     <div class="owl-carousel owl-theme">
+        {{--
         <!-- Slide Black Friday -->
         <div class="slide-container black-friday" 
             style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_two_black_friday.jpg') }})">
@@ -34,6 +35,7 @@
                 </div>
             </div>
         </div>
+        --}}
 
         <!-- Slide 1 -->
         <div class="slide-container one" 
@@ -115,6 +117,7 @@
     <div class="thumbs hidden md:flex">
         <div class="container">
             <ul>
+                {{--
                 <li>
                     <i class="fa fa-caret-up"></i>
                     <p>
@@ -124,6 +127,7 @@
                         Use code BLACKFRIDAY
                     </small>
                 </li>
+                --}}
                 <li>
                     <i class="fa fa-caret-up"></i>
                     <p>
