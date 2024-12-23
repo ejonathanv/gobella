@@ -37,6 +37,54 @@
         </div>
         --}}
 
+        <!-- Slide Merry Christmas -->
+        <div class="slide-container merry-christmas" 
+            style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_merry_christmas.jpg') }}); background-color: #8f1537">
+            <div class="container h-full !p-0 md:!px-6 xl:!px-0">
+                <div class="slide h-full flex-col md:flex-row md:space-y-0 !space-x-0 md:!space-x-24 text-center md:text-left">
+                    <div class="w-full md:w-1/2 px-6 md:p-0">
+                        <h1 class="mb-7 md:mb-7 !text-white">
+                            <span class="text-white">
+                                Merry Christmas: 
+                            </span>
+                            Get 20% Off Your Order with Code <span class="text-yellow-500">MERRYXMAS</span>
+                        </h1>
+                        <p class="mb-7 md:mb-7 !text-white">
+                            Celebrate the holiday season with natural energy! Give yourself or your loved ones the gift of vitality with Go Bella Wellness Energy Supplements.
+                            <span class="text-yellow-500 font-bold">
+                                Use code MERRYXMAS
+                            </span> 
+                            at checkout to save 20%. 
+                        </p>
+                        <p class="mb-7 md:mb-7 !text-white">
+                            Don’t wait—this offer is valid for a limited time only!
+                        </p>
+                        <style>
+                            @media (max-width: 767px) {
+                                .shopify-button {
+                                    display: flex;
+                                    justify-content: center;
+                                    margin-top: 20px;
+                                    margin-bottom: 20px;
+                                }
+                                .shopify-button .buy-button-product {
+                                    position: relative;
+                                    top: 0;
+                                    left: calc(50% - 140px);
+                                }
+                            }
+                        </style>
+                        <div class="shopify-button">
+                            <div class="buy-button-product"></div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 mt-auto">
+                        <img src="{{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_merry_christmas_mobile.jpg') }}" alt="Go Bella Wellness Energy Supplements" class="!block md:!hidden">
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Slide 1 -->
         <div class="slide-container one" 
             style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_two.jpg') }})">
@@ -128,6 +176,15 @@
                     </small>
                 </li>
                 --}}
+                <li>
+                    <i class="fa fa-caret-up"></i>
+                    <p>
+                        Christmas Special: 20% Off
+                    </p>
+                    <small>
+                        Use code MERRYXMAS
+                    </small>
+                </li>
                 <li>
                     <i class="fa fa-caret-up"></i>
                     <p>
