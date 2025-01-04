@@ -37,6 +37,7 @@
         </div>
         --}}
 
+        {{--
         <!-- Slide Merry Christmas -->
         <div class="slide-container merry-christmas" 
             style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_merry_christmas.jpg') }}); background-color: #8f1537">
@@ -84,6 +85,7 @@
                 </div>
             </div>
         </div>
+        --}}
 
         <!-- Slide 1 -->
         <div class="slide-container one" 
@@ -176,6 +178,8 @@
                     </small>
                 </li>
                 --}}
+                
+                {{--
                 <li>
                     <i class="fa fa-caret-up"></i>
                     <p>
@@ -185,6 +189,7 @@
                         Use code MERRYXMAS
                     </small>
                 </li>
+                --}}
                 <li>
                     <i class="fa fa-caret-up"></i>
                     <p>
