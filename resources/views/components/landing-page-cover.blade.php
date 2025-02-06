@@ -87,6 +87,39 @@
         </div>
         --}}
 
+        <!-- Slide Valentine's Day -->
+        <div class="slide-container valentine" 
+            style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_valentines.jpg') }})">
+            <div class="container h-full !p-0 md:!px-6 xl:!px-0">
+                <div class="slide h-full flex-col md:flex-row md:space-y-0 !space-x-0 md:!space-x-24 text-center md:text-left">
+                    <div class="w-full md:w-1/2 px-6 md:p-0">
+                        <h1 class="mb-7 md:mb-7 !text-white">
+                            <span class="text-light">
+                                Valentine's Day Special: 
+                            </span>
+                            Get 30% Off Your Order <br>with Code <span class="text-light font-bold">FEB14</span>
+                        </h1>
+                        <p class="mb-7 md:mb-7 !text-light">
+                            Share the love and energy this Valentine's Day! Give the gift of natural vitality with Go Bella Wellness Energy Supplements.
+                            <span class="text-light font-bold">
+                                Use code FEB14
+                            </span>
+                            at checkout to save 30%.
+                        </p>
+                        <p class="mb-7 md:mb-7 !text-light">
+                            Limited time offer - Show your love today!
+                        </p>
+                        <div class="shopify-button">
+                            <div class="buy-button-product"></div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 mt-auto">
+                        <img src="{{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_valentines_mobile.jpg') }}" alt="Go Bella Wellness Energy Supplements" class="!block md:!hidden">
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Slide 1 -->
         <div class="slide-container one" 
             style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_two.jpg') }})">
@@ -190,6 +223,15 @@
                     </small>
                 </li>
                 --}}
+                <li>
+                    <i class="fa fa-caret-up"></i>
+                    <p>
+                        Valentine's Day: 30% Off
+                    </p>
+                    <small>
+                        Use code FEB14
+                    </small>
+                </li>
                 <li>
                     <i class="fa fa-caret-up"></i>
                     <p>
