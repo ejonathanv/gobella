@@ -89,7 +89,7 @@
 
         <!-- Slide Valentine's Day -->
         <div class="slide-container valentine" 
-            style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_valentines.jpg') }})">
+            style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_valentines.jpg') }}); background-color: #f15f59">
             <div class="container h-full !p-0 md:!px-6 xl:!px-0">
                 <div class="slide h-full flex-col md:flex-row md:space-y-0 !space-x-0 md:!space-x-24 text-center md:text-left">
                     <div class="w-full md:w-1/2 px-6 md:p-0">
