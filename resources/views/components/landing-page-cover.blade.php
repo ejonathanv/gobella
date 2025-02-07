@@ -97,14 +97,11 @@
                             <span class="text-light">
                                 Valentine's Day Special: 
                             </span>
-                            Get 30% Off Your Order <br>with Code <span class="text-light font-bold">FEB14</span>
+                            Buy One Get 30% Off Second
                         </h1>
                         <p class="mb-7 md:mb-7 !text-light">
                             Share the love and energy this Valentine's Day! Give the gift of natural vitality with Go Bella Wellness Energy Supplements.
-                            <span class="text-light font-bold">
-                                Use code FEB14
-                            </span>
-                            at checkout to save 30%.
+                            Purchase one bottle and get 30% off your second bottle.
                         </p>
                         <p class="mb-7 md:mb-7 !text-light">
                             Limited time offer - Show your love today!
@@ -226,10 +223,10 @@
                 <li>
                     <i class="fa fa-caret-up"></i>
                     <p>
-                        Valentine's Day: 30% Off
+                        Valentine's Day
                     </p>
                     <small>
-                        Use code FEB14
+                        Buy One Get 30% Off Second
                     </small>
                 </li>
                 <li>
