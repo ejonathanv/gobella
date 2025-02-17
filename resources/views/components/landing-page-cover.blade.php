@@ -35,9 +35,7 @@
                 </div>
             </div>
         </div>
-        --}}
 
-        {{--
         <!-- Slide Merry Christmas -->
         <div class="slide-container merry-christmas" 
             style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_merry_christmas.jpg') }}); background-color: #8f1537">
@@ -85,8 +83,7 @@
                 </div>
             </div>
         </div>
-        --}}
-
+        
         <!-- Slide Valentine's Day -->
         <div class="slide-container valentine" 
             style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_valentines.jpg') }}); background-color: #f15f59">
@@ -116,6 +113,7 @@
                 </div>
             </div>
         </div>
+        --}}
 
         <!-- Slide 1 -->
         <div class="slide-container one" 
@@ -207,9 +205,7 @@
                         Use code BLACKFRIDAY
                     </small>
                 </li>
-                --}}
-                
-                {{--
+
                 <li>
                     <i class="fa fa-caret-up"></i>
                     <p>
@@ -219,7 +215,7 @@
                         Use code MERRYXMAS
                     </small>
                 </li>
-                --}}
+                
                 <li>
                     <i class="fa fa-caret-up"></i>
                     <p>
@@ -229,6 +225,7 @@
                         Buy One Get 30% Off Second
                     </small>
                 </li>
+                --}}
                 <li>
                     <i class="fa fa-caret-up"></i>
                     <p>
@@ -238,6 +235,7 @@
                         Say goodbye to sugar crashes
                     </small>
                 </li>
+
                 <li>
                     <i class="fa fa-caret-up"></i>
                     <p>
@@ -247,6 +245,7 @@
                         Delicious way to boost your energy
                     </small>
                 </li>
+                
                 <li>
                     <i class="fa fa-caret-up"></i>
                     <p>
