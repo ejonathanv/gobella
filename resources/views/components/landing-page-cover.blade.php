@@ -115,6 +115,20 @@
         </div>
         --}}
 
+        <!-- Slide Día de las Madres -->
+        <div class="slide-container mothers-day" 
+            style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_mothers.jpeg') }}); background-color: #f2e8e0">
+            <div class="container h-full !p-0 md:!px-6 xl:!px-0">
+                <div class="slide h-full flex-col md:flex-row md:space-y-0 !space-x-0 md:!space-x-24 text-center md:text-left items-end">
+                    <div class="w-full md:w-1/2 px-6 md:p-0">
+                    </div>
+                    <div class="w-full md:w-1/2 mt-auto">
+                        <img src="{{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_mothers_mobile.jpg') }}" alt="Go Bella Wellness Energy Supplements" class="!block md:!hidden h-full w-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Slide 1 -->
         <div class="slide-container one" 
             style="background-image: url({{ asset('landing-page/template-imgs/jar-go-bella-wellness_slide_two.jpg') }})">
