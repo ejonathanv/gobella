@@ -113,7 +113,6 @@
                 </div>
             </div>
         </div>
-        --}}
 
         <!-- Slide Día de las Madres -->
         <div class="slide-container mothers-day" 
@@ -128,6 +127,7 @@
                 </div>
             </div>
         </div>
+        --}}
 
         <!-- Slide 1 -->
         <div class="slide-container one" 
